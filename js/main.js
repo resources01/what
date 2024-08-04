@@ -40,7 +40,7 @@
             autoplay: true,
             autoplaySpeed: 2000,
             speed: 300,
-            slidesToShow: 4,
+            slidesToShow: 3,
             slidesToScroll: 1,
             responsive: [
                 {
