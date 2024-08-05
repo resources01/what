@@ -216,16 +216,16 @@
         autoplayHoverPause: false,
         responsive: {
             0:{
-                items:1
+                items:1,
             },
             575:{
-                items:1
+                items:1,
             },
             767:{
-                items:2
+                items:2,
             },
             991:{
-                items:4
+                items:3,
             }
         }
     });
@@ -252,7 +252,7 @@
                 items:2
             },
             991:{
-                items:4
+                items:3
             }
         }
     });

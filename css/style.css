@@ -632,15 +632,6 @@ small {
     object-fit: cover;
 }
 
-@media (max-width: 768px) {
-    #gift-card .owl-carousel img {
-        display: block;
-        width: auto;
-        height: 150px !important;
-        object-fit: cover;
-    }
-}
-
 /*** END NEW CSS ***/
 
 /*** Navbar Start ***/
