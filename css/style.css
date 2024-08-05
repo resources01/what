@@ -626,10 +626,18 @@ small {
 /*---------end  xoay 180 -------------*/
 
 #gift-card .owl-carousel img {
-    display: block;
-    width: auto;
     height: 250px;
     object-fit: cover;
+}
+
+.slider-scroll img {
+    height: 250px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.f-right {
+    float: right !important;
 }
 
 /*** END NEW CSS ***/

@@ -71,6 +71,21 @@
         });
     });
 
+    $(document).ready(function(){
+        $('.slider-scroll').slick({
+            rtl: false,
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            arrows: false,
+            autoplay: true,
+            autoplaySpeed: 0, // Không có thời gian chờ
+            speed: 2000, // Tốc độ chuyển động
+            cssEase: 'linear', // Chuyển động mượt mà
+            variableWidth: true,
+        });
+    });
+
     // Spinner
     var spinner = function () {
         setTimeout(function () {
@@ -135,6 +150,7 @@
         autoplayTimeout: 0,
         autoplaySpeed: 2000,
         autoplayHoverPause: false,
+        rtl: true,
         responsive: {
             0:{
                 items:1
@@ -205,7 +221,7 @@
 
     $(".testimonial-carousel-4").owlCarousel({
         loop: true,
-        dots: false,
+        items: 1,
         margin: 25,
         autoWidth: true,
         autoplay: true,
@@ -213,20 +229,6 @@
         autoplayTimeout: 0,
         autoplaySpeed: 2000,
         autoplayHoverPause: false,
-        responsive: {
-            0:{
-                items:1,
-            },
-            575:{
-                items:1,
-            },
-            767:{
-                items:2,
-            },
-            991:{
-                items:3,
-            }
-        }
     });
 
     $(".testimonial-carousel-5").owlCarousel({
@@ -242,6 +244,9 @@
         autoplayHoverPause: false,
         responsive: {
             0:{
+                items:1
+            },
+            390:{
                 items:1
             },
             575:{
