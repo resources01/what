@@ -126,7 +126,7 @@ h4, h5, h6, .h4, .h5, .h6 {
 
 .play .fa-play {
     color: #251a02;
-    z-index: 10;
+    z-index: 8;
     font-size: 29px;
     position: relative;
     align-items: center;
@@ -277,8 +277,8 @@ h4, h5, h6, .h4, .h5, .h6 {
 .bg-form {
     padding: 20px 15px;
     border-radius: 5px;
-    background: #0b1139;
-    border: solid 1px #1b1b53;
+    background: #061f31;
+    border: solid 1px #041723;
     box-shadow: 0px 0px 10px #000006;
 }
 
@@ -378,7 +378,7 @@ small {
 }
 
 .video-display {
-    flex: 12;
+    flex: 9;
     max-height: 700px;
 }
 
@@ -404,7 +404,17 @@ small {
         height: 100%;
     }
     .video-list {
-        height: 325px;
+        height: 300px;
+        padding: 0;
+    }
+}
+
+@media (min-width: 400px) {
+    #mainVideo {
+        height: 100%;
+    }
+    .video-list {
+        height: 320px;
         padding: 0;
     }
 }
@@ -426,6 +436,10 @@ small {
     .video-list {
         height: 630px;
         padding: 0;
+    }
+    .video-display {
+        flex: 12;
+        max-height: 700px;
     }
 }
 
@@ -529,9 +543,8 @@ small {
 
 .padding-menu {
     padding: 50px 50px 0 50px;
-    background: #0b1139;
-    border: solid 1px #1b1b53;
-    box-shadow: 0px 0px 10px #000006;
+    background: #061f31;
+    border: solid 1px #041723;
 }
 
 .Template .slider-social img {
@@ -611,13 +624,20 @@ small {
 /* end For phone */
 /*---------end  xoay 180 -------------*/
 
+#gift-card .owl-carousel img {
+    display: block;
+    width: auto;
+    height: 250px;
+    object-fit: cover;
+}
+
 /*** END NEW CSS ***/
 
 /*** Navbar Start ***/
 
-@media (max-width: 992px) {
-    .nav-bar {
-        /* background-color: #101d45 !important; */
+@media (max-width: 1024px) {
+    .navbar-collapse.collapse.show {
+        background: linear-gradient(90deg, #061f31, #11364c);
     }
 }
 
@@ -913,8 +933,8 @@ small {
 /*** Blog Start ***/
 .blog-item {
     position: relative;
-    background: #0b1139;
-    border: solid 1px #1b1b53;
+    background: #061f31;
+    border: solid 1px #041723;
     box-shadow: 0px 0px 10px #000006;
     padding: 10px;
 }

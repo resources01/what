@@ -21,6 +21,7 @@
         $('.slider-social').slick({
             infinite: true,
             autoplay: true,
+            arrow: true,
             autoplaySpeed: 2000,
             speed: 300,
             slidesToShow: 1,
@@ -40,6 +41,7 @@
             autoplay: true,
             autoplaySpeed: 2000,
             speed: 300,
+            arrow: false,
             slidesToShow: 3,
             slidesToScroll: 1,
             responsive: [
@@ -185,6 +187,59 @@
         slideTransition: 'linear',
         autoplayTimeout: 0,
         autoplaySpeed: 10000,
+        autoplayHoverPause: false,
+        responsive: {
+            0:{
+                items:1
+            },
+            575:{
+                items:1
+            },
+            767:{
+                items:2
+            },
+            991:{
+                items:3
+            }
+        }
+    });
+
+    $(".testimonial-carousel-4").owlCarousel({
+        loop: true,
+        dots: false,
+        margin: 25,
+        autoWidth: true,
+        autoplay: true,
+        slideTransition: 'linear',
+        autoplayTimeout: 0,
+        autoplaySpeed: 2000,
+        autoplayHoverPause: false,
+        responsive: {
+            0:{
+                items:1
+            },
+            575:{
+                items:1
+            },
+            767:{
+                items:2
+            },
+            991:{
+                items:3
+            }
+        }
+    });
+
+    $(".testimonial-carousel-5").owlCarousel({
+        loop: true,
+        dots: false,
+        rtl: true,
+        margin: 25,
+        autoWidth: true,
+        autoplay: true,
+        slideTransition: 'linear',
+        autoplayTimeout: 0,
+        autoplaySpeed: 2000,
         autoplayHoverPause: false,
         responsive: {
             0:{

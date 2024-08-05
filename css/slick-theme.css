@@ -35,7 +35,7 @@
     transform: translate(0, -50%);
 
     cursor: pointer;
-
+    z-index: 2;
     color: transparent;
     border: none;
     outline: none;
@@ -71,7 +71,7 @@
     line-height: 1;
 
     opacity: .75;
-    color: white;
+    color: #e3ba2c;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -79,11 +79,11 @@
 
 .slick-prev
 {
-    left: -25px;
+    left: 15px;
 }
 [dir='rtl'] .slick-prev
 {
-    right: -25px;
+    right: 15px;
     left: auto;
 }
 .slick-prev:before
@@ -97,12 +97,12 @@
 
 .slick-next
 {
-    right: -25px;
+    right: 15px;
 }
 [dir='rtl'] .slick-next
 {
     right: auto;
-    left: -25px;
+    left: 15px;
 }
 .slick-next:before
 {
