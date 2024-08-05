@@ -379,6 +379,7 @@ small {
 
 .video-display {
     flex: 9;
+    padding-right: 10px;
     max-height: 700px;
 }
 
@@ -404,7 +405,7 @@ small {
         height: 100%;
     }
     .video-list {
-        height: 300px;
+        height: 280px;
         padding: 0;
     }
 }
@@ -424,7 +425,7 @@ small {
         height: 100%;
     }
     .video-list {
-        height: 600px;
+        height: 570px;
         padding: 0;
     }
 }
@@ -629,6 +630,15 @@ small {
     width: auto;
     height: 250px;
     object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    #gift-card .owl-carousel img {
+        display: block;
+        width: auto;
+        height: 150px;
+        object-fit: cover;
+    }
 }
 
 /*** END NEW CSS ***/
