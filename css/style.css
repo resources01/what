@@ -633,6 +633,7 @@ small {
 .slider-scroll img {
     height: 250px;
     object-fit: cover;
+    border: solid 1px #666;
     margin-right: 25px;
 }
 
