@@ -517,10 +517,10 @@ small {
 }
 
 .Template .page-link {
-    border: solid 1px #2e2e5d;
+    border: solid 1px #041723;
+    box-shadow: 0px 0px 10px #000006;
     color: #fff;
     margin: 0 2px;
-    box-shadow: 2px 2px 10px #20205f;
 }
 
 .Template .page-link:hover {
@@ -636,7 +636,7 @@ small {
     #gift-card .owl-carousel img {
         display: block;
         width: auto;
-        height: 150px;
+        height: 150px !important;
         object-fit: cover;
     }
 }
