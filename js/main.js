@@ -30,7 +30,11 @@
     });
 
     //before-after-pic
-    $(window).load(function() {
+    // $(window).load(function() {
+    //     $(".before-after").twentytwenty();
+    // });
+    //before-after-pic
+    $(document).ready(function() {
         $(".before-after").twentytwenty();
     });
 
