@@ -80,7 +80,7 @@
             arrows: false,
             autoplay: true,
             autoplaySpeed: 0, // Không có thời gian chờ
-            speed: 2000, // Tốc độ chuyển động
+            speed: 3000, // Tốc độ chuyển động
             cssEase: 'linear', // Chuyển động mượt mà
             variableWidth: true,
         });
