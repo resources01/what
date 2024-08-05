@@ -21,7 +21,7 @@
         $('.slider-social').slick({
             infinite: true,
             autoplay: true,
-            arrow: true,
+            arrows: true,
             autoplaySpeed: 2000,
             speed: 300,
             slidesToShow: 1,
@@ -41,7 +41,7 @@
             autoplay: true,
             autoplaySpeed: 2000,
             speed: 300,
-            arrow: false,
+            arrows: false,
             slidesToShow: 3,
             slidesToScroll: 1,
             responsive: [
