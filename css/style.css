@@ -1084,6 +1084,13 @@ small {
 }
 /*** Footer End ***/
 
-
+.ahref {
+    color: #fff !important;
+}
+.ahref:hover {
+    color: #fff !important;
+    font-size: 17px;
+    text-decoration: underline;
+}
 
 
