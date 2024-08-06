@@ -295,6 +295,12 @@ small {
     background-clip: text;
 }
 
+.text-title {
+    background: -webkit-linear-gradient(313deg, #744f1c, #744f1c, #e0b220, #faf282, #e0b220, #744f1c, #744f1c);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
 .btn-primary {
     background: linear-gradient(313deg, #744f1c, #e0b220, #faf282, #e0b220, #744f1c) !important;
     border: solid 1px #b58b3d !important;
