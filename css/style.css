@@ -273,7 +273,7 @@ h4, h5, h6, .h4, .h5, .h6 {
 }
 
 .navbar-brand {
-    padding-top: 10px;
+    padding-top: 0px;
     padding-bottom: 0;
     margin-right: 1rem;
     font-size: 1.25rem;
@@ -1112,4 +1112,13 @@ small {
     text-decoration: underline;
 }
 
+/* HK */
+.font-logo {
+    background: -webkit-linear-gradient(180deg, #FFE42B 0%, #FFFF8B 22.92%, #B87700 45.31%, #FFC02F 66.15%, #FFE42B 97.92%);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-family: UTM Eremitage !important;
+    font-size: 26px;
+    letter-spacing: 1px;
+}
 
