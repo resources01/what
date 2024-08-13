@@ -1250,7 +1250,7 @@
                 };
 
                 const handleActivePageNumber = () => {
-                    document.querySelectorAll("."+s1).forEach((button) => {
+                    document.querySelectorAll("." + s1).forEach((button) => {
                         button.classList.remove("active");
                         const pageIndex = Number(button.getAttribute("page-index"));
                         if (pageIndex == currentPage) {
@@ -1270,16 +1270,51 @@
                 };
 
                 const getPaginationNumbers = () => {
-                    for (let i = 1; i <= pageCount; i++) {
+                    paginationNumbers.innerHTML = '';
+
+                    let startPage, endPage;
+                    if (pageCount <= 5) {
+                        startPage = 1;
+                        endPage = pageCount;
+                    } else {
+                        if (currentPage <= 3) {
+                            startPage = 1;
+                            endPage = 4;
+                        } else if (currentPage + 2 >= pageCount) {
+                            startPage = pageCount - 3;
+                            endPage = pageCount;
+                        } else {
+                            startPage = currentPage - 1;
+                            endPage = currentPage + 1;
+                        }
+                    }
+
+                    for (let i = startPage; i <= endPage; i++) {
                         appendPageNumber(i);
+                    }
+
+                    if (startPage > 1) {
+                        const dots = document.createElement("span");
+                        dots.className = "page-link bg-light";
+                        dots.innerHTML = "...";
+                        paginationNumbers.insertBefore(dots, paginationNumbers.firstChild);
+                    }
+
+                    if (endPage < pageCount) {
+                        const dots = document.createElement("span");
+                        dots.className = "page-link bg-light";
+                        dots.innerHTML = "...";
+                        paginationNumbers.appendChild(dots);
                     }
                 };
 
                 const setCurrentPage = (pageNum) => {
                     currentPage = pageNum;
-
+                    getPaginationNumbers();
                     handleActivePageNumber();
-                    handlePageButtonsStatus();
+                    handlePageButtonsStatus();       
+                    
+                    
                     
                     const prevRange = (pageNum - 1) * paginationLimit;
                     const currRange = pageNum * paginationLimit;
@@ -1304,7 +1339,7 @@
                         setCurrentPage(currentPage + 1);
                     });
 
-                    document.querySelectorAll("."+s1).forEach((button) => {
+                    document.querySelectorAll("." + s1).forEach((button) => {
                         const pageIndex = Number(button.getAttribute("page-index"));
 
                         if (pageIndex) {
