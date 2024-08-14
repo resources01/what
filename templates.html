@@ -1267,6 +1267,10 @@
                     pageNumber.setAttribute("aria-label", "Page " + index);
 
                     paginationNumbers.appendChild(pageNumber);
+
+                    pageNumber.addEventListener("click", () => {
+                        setCurrentPage(index);
+                    });
                 };
 
                 const getPaginationNumbers = () => {
