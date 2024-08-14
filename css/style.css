@@ -32,22 +32,22 @@ body {
 
 .back-to-top {
     position: fixed;
-    right: 15px;
+    right: 10px;
     bottom: 30px;
     z-index: 99;
 }
 
 .btn-message {
     position: fixed;
-    left: 30px;
-    bottom: 80px;
+    right: 10px;
+    bottom: 110px;
     z-index: 99;
 }
 
 .btn-call {
     position: fixed;
-    left: 30px;
-    bottom: 30px;
+    right: 10px;
+    bottom: 80px;
     z-index: 99;
 }
 
