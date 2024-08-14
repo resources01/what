@@ -39,15 +39,15 @@ body {
 
 .btn-message {
     position: fixed;
-    right: 15px;
-    bottom: 200px;
+    right: 90%;
+    bottom: 80px;
     z-index: 99;
 }
 
 .btn-call {
     position: fixed;
-    right: 15px;
-    bottom: 150px;
+    right: 90%;
+    bottom: 30px;
     z-index: 99;
 }
 
