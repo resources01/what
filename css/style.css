@@ -40,15 +40,17 @@ body {
 .btn-message {
     position: fixed;
     right: 15px;
+    bottom: 200px;
+    z-index: 99;
+}
+
+.btn-call {
+    position: fixed;
+    right: 15px;
     bottom: 150px;
     z-index: 99;
 }
 
-@media (max-width: 768px) {
-    .btn-message {
-        right: 5px;
-    }
-}
 
 
 h1, h2, h3, .h1, .h2, .h3 {
