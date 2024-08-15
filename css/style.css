@@ -328,6 +328,12 @@ small {
     background-clip: text;
 }
 
+#business-card .text-logo {
+    background: -webkit-linear-gradient(180deg, #676869, #fcfcfc, #676869);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
 .text-title {
     background: -webkit-linear-gradient(313deg, #744f1c, #744f1c, #e0b220, #faf282, #e0b220, #744f1c, #744f1c);
     -webkit-text-fill-color: transparent;
