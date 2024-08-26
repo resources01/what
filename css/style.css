@@ -723,6 +723,7 @@ small {
     background: -webkit-linear-gradient(180deg, #FFE42B 0%, #FFFF8B 22.92%, #B87700 45.31%, #FFC02F 66.15%, #FFE42B 97.92%);
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    outline: none;
 }
 
 .navbar .navbar-nav .nav-link:hover,
